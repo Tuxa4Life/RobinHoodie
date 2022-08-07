@@ -1,0 +1,188 @@
+@media (max-width: 769px) {
+  main {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .category-card {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+@media (max-width: 424px) {
+  .category-card {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .search-field {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .search-field input {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .filter-field {
+    display: none !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .card {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .profileCard {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1104px) {
+  .infoCard {
+    width: 90% !important;
+    height: 80% !important;
+  }
+}
+
+@media (max-width: 668px) {
+  .infoCard .first-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 668px) {
+  .infoCard .first-row .first-half, .infoCard .first-row .second-half {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 668px) {
+  .infoCard .second-row p {
+    display: none;
+  }
+}
+
+.sNav {
+  display: none;
+  z-index: 100;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.6);
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 25px;
+  border: 1px black solid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 769px) {
+  .sNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.sNav i {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.sNav img {
+  width: 35px;
+}
+
+.sNav .small-state {
+  width: 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sNav .small-state img {
+  width: 35px;
+}
+
+.sNav .half-part {
+  display: none;
+  opacity: 0;
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sNav .half-part i {
+  display: none;
+  opacity: 0;
+}
+
+.sNav .half-part img {
+  display: none;
+}
+
+.wide {
+  width: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.wide .half-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.wide .half-part i {
+  display: unset;
+  opacity: 1;
+}
+
+.wide .half-part img {
+  display: unset;
+}
+/*# sourceMappingURL=sNavigation.css.map */

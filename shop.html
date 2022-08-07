@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/navigation.css">
+    <link rel="stylesheet" href="assets/styles/shop.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/7c08aaed76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/styles/generalCards.css">
+    <link rel="stylesheet" href="assets/styles/sNavigation.css">
+    <link rel="stylesheet" href="assets/styles/card.css">
+    <link rel="stylesheet" href="assets/styles/button.css">
+    <link rel="shortcut icon" href="assets/images/Logo.png">
+    <title>RH | Main Shop</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div style="cursor: pointer;" class="image-text" onclick="window.location.href = 'index.html'">
+                <span class="image">
+                    <img src="assets/images/Logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Robin Hoodie</span>
+                    <span class="profession">Merch Shop</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box active">
+                    <i class='bx bx-search icon'></i>
+                    <span class="text nav-text search-span-text">ძიება</span>
+                </li>
+                
+                <ul class="menu-links">
+                    <li style="cursor: pointer;" class="nav-link">
+                        <a class="home-link">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">მთავარი</span>
+                        </a>
+                    </li>
+
+                    <li style="cursor: pointer;" class="nav-link">
+                        <a class="bookmark-link">
+                            <i class='bx bx-bookmarks icon'></i>
+                            <span class="text nav-text">შენახულები</span>
+                        </a>
+                    </li>
+
+                    <li style="cursor: pointer;" class="nav-link">
+                        <a class="profile-link">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">ანგარიში</span>
+                        </a>
+                    </li>
+
+
+                    <li style="cursor: pointer;" class="nav-link">
+                        <a class="contact-link">
+                            <i class='bx bx-message-dots icon'></i>
+                            <span class="text nav-text">კონტაქტი</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">მუქი რეჟიმი</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <main style="flex-direction: column;">
+        <!-- Category Selector -->
+        <i class='bx bxs-category'></i>
+
+        <!-- Grid Changer -->
+        <i class='bx bx-columns bx-rotate-270 grid-changer' ></i>
+
+        <div style="transition: all .05s;" class="search-field drk">
+            <input style="cursor: text !important;" id="searchbar" placeholder="Search" type="text" list="options">
+            <datalist id="options">
+                <option>Anime</option>
+                <option>Movie</option>
+                <option>Series</option>
+                <option>Cartoons</option>
+            </datalist>
+            
+            <img id="searchBtn" src="assets/icons/search-solid.svg" alt="Search" title="Double Click to toggle">
+            <img src="assets/icons/grip-lines-vertical-solid.svg" alt="||" id="drag">
+        </div>
+
+        <div class="filter-field drk">
+            <div class="header-sect">
+                <h2 class="filter-header">ფილტრი</h2>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="filter-content">
+                <div class="dropdowns">
+                    <label for="Category">კატეგორია: </label>
+                    <select name="Category">
+                        <option selected value="">None</option>
+                        <option value="Anime">Anime</option>
+                        <option value="Series">Series</option>
+                        <option value="Cartoons">Cartoons</option>
+                        <option value="Movies">Movies</option>
+                        <option value="Classics">Classics</option>
+                    </select>
+                    <br>
+                    <label for="Sizes">ზომები: </label>
+                    <select name="Sizes">
+                        <option selected value="">None</option>
+                        <option value="All">All</option>
+                        <option value="S">S</option>
+                        <option value="SM">SM</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <br>
+                    <label for="Type">ტიპი :</label>
+                    <select name="Type">
+                        <option selected value="">None</option>
+                        <option value="Hoodie">Hoodie</option>
+                        <option value="Shirt">Shirt</option>
+                        <option value="T-Shirt">T-Shirt</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <label for="Price">მაქს. ფასი:</label>
+                    <input value="40" name="Price" min="25" max="80" data-range type="range" oninput="this.nextElementSibling.value = this.value">
+                    <output>40</output>
+                </div>
+                <div style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;" class="button-holder">
+                    <button class="filterBtn button-13">გაფილტვრა</button> 
+                    <span class="resetBtn" style="text-decoration: underline; cursor: pointer;">Reset</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="sFilter">
+            <i class='bx bx-chevron-left chevv'></i>
+            <h2>ფილტრი</h2>
+
+            <div class="sFilter-content">
+                <div class="sDropdowns">
+                    <div>
+                        <label for="sCategory">კატეგორია: </label>
+                        <select name="sCategory">
+                            <option selected value="">None</option>
+                            <option value="Anime">Anime</option>
+                            <option value="Series">Series</option>
+                            <option value="Cartoons">Cartoons</option>
+                            <option value="Movies">Movies</option>
+                            <option value="Classics">Classics</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="sSizes">ზომები: </label>
+                        <select name="sSizes">
+                            <option selected value="">None</option>
+                            <option value="All">All</option>
+                            <option value="S">S</option>
+                            <option value="SM">SM</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="sType">ტიპი: </label>
+                        <select name="sType">
+                            <option selected value="">None</option>
+                            <option value="Hoodie">Hoodie</option>
+                            <option value="Shirt">Shirt</option>
+                            <option value="T-Shirt">T-Shirt</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label for="Price">მაქს. ფასი: </label>
+                    <input value="40" name="Price" min="25" max="80" data-sRange type="range" oninput="this.nextElementSibling.value = this.value">
+                    <output>40</output>
+                </div>
+                <div style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;" class="button-holder">
+                    <button class="sFilterBtn button-13">გაფილტვრა</button> 
+                    <span class="sResetBtn" style="text-decoration: underline; cursor: pointer;">Reset</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container"></div>
+        <h3 style="margin: 10px 0 90px 0; width: 100%; text-align: center;">თუ თქვენთვის სასურველი პროდუქტი ვერ მოიძებნა, დაგვიკავშირდით Messenger-ზე შეკვეთისათვის.</h3>
+        
+    </main>
+
+    <nav class="sNav">
+        <div class="first-half-part half-part">
+            <img src="assets/images/Logo.png" class="Shome-link" alt="">
+            <!-- <i class='bx bx-home-alt icon Shome-link' ></i> -->
+            <i class='bx bx-bookmarks icon Sbookmark-link'></i>
+        </div>
+        <div class="small-state">
+            <i class='bx bx-search icon Ssearch-box'></i>
+        </div>
+        <div class="second-half-part half-part">
+            <i class='bx bx-user icon Sprofile-link'></i>
+            <i class='bx bx-message-dots icon Scontact-link'></i>
+        </div>
+    </nav>
+    <div class="Ssearch-box"></div>
+
+    <script src="assets/js/user_data.js"></script>
+    
+    <script src="assets/js/Cards/card.js"></script>
+    <script src="assets/js/Cards/moreinfo.js"></script>
+    <script src="assets/js/Cards/imageCard.js"></script>
+    
+    <script src="assets/js/contents.js"></script>
+    <script src="assets/js/Cards/categoryCard.js"></script>
+    <script src="assets/js/Page Scripts/shop.js"></script>
+
+    <script src="assets/js/Functions/shuffle.js"></script>
+    <script src="assets/js/Functions/search.js"></script>
+    <script src="assets/js/Functions/searching.js"></script>
+    <script src="assets/js/Functions/filtering.js"></script>
+    <script src="assets/js/Functions/filter.js"></script>
+    <script src="assets/js/Functions/messengerDirect.js"></script>
+
+    <script src="assets/js/Cards/profileCard.js"></script>
+    <script src="assets/js/Cards/editCard.js"></script>
+    <script src="assets/js/Cards/passwordChangeCard.js"></script>
+    
+    <script src="assets/js/Navigation/navigation.js"></script>
+    <script src="assets/js/Navigation/sNavigation.js"></script>
+    
+    <script src="assets/js/links.js"></script>
+</body>
+</html>

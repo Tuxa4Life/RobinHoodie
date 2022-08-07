@@ -1,0 +1,88 @@
+main {
+  width: 96%;
+  margin-left: 88px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container {
+  width: 90%;
+  min-height: 100vh;
+}
+
+main .container .categories {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .container .categories .categoryCard {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  border-radius: 7px;
+  border: 1px black solid;
+  margin: 10px;
+  cursor: pointer;
+}
+
+main .container .categories .categoryCard .img-holder {
+  height: 250px;
+  width: 100%;
+  border-bottom: 1px black solid;
+}
+
+main .container .categories .categoryCard .img-holder img {
+  height: 100%;
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .container .categories .categoryCard .text-holder {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container .categories .categoryCard .text-holder p {
+  text-align: center;
+}
+
+body.dark main .drk {
+  background-color: #242526 !important;
+  color: silver !important;
+}
+
+body.dark main .drk input {
+  background: #4c4d50 !important;
+}
+
+body.dark h1 {
+  color: silver !important;
+}
+/*# sourceMappingURL=index.css.map */

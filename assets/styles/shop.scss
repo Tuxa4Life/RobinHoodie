@@ -1,0 +1,349 @@
+button, i, input {
+    cursor: pointer;
+}
+
+main {
+    width: 96%;
+    margin-left: 88px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .bxs-category {
+        position: fixed;
+        font-size: 25px;
+        padding: 7px;
+        top: 1.5%;
+        left: 10%;
+        background-color: white;
+        border-radius: 25px;
+        transition: all .5s;
+        border: 1px black solid;
+        @media (max-width: 769px) {
+            left: 5%;
+            top: 7%;
+        }
+    }
+    .grid-changer {
+        position: fixed;
+        font-size: 25px;
+        padding: 7px;
+        top: 1.5%;
+        left: 13%;
+        background-color: white;
+        border-radius: 25px;
+        border: 1px black solid;
+        transition: all .5s;
+        @media (max-width: 1359px) {
+            left: 16%;
+        }
+        @media (max-width: 769px) {
+            left: 5%;
+            top: 14%;
+        }
+    }
+    .grid-changer:hover, .bxs-category:hover {
+        background-color: rgba(58, 189, 90, 0.425);
+    }
+    .search-field {
+        position: fixed;
+        width: 385px; // 77
+        height: 50px;
+        @media (max-width: 954px) {
+            left: 25%;
+        }
+        @media (max-width: 450px) {
+            width: 80% !important;
+            left: 10%;
+        }
+        background-color: #FFFFFF;
+        top: 1%;
+        left: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px black solid;
+
+        img {
+            filter: invert(48%) sepia(9%) saturate(334%) hue-rotate(186deg) brightness(92%) contrast(85%);
+            color: #ccd2e2;
+            user-select: none;
+        }
+
+        * {
+            margin: 0 5px;
+        }
+
+        [title="Double Click to toggle"] {
+            width: 35px;
+            cursor: pointer;
+        }
+        #drag:last-child {
+            width: 10px;
+            
+        }
+        #drag:last-child:hover {
+            cursor: move;
+        }
+        #drag {
+            @media (max-width: 769px) {
+                display: none;
+            }
+        }
+
+        input {
+            height: 80%;
+            width: 300px;
+            outline: none;
+            transition: .3s;
+            border-radius: 10px;
+            border: 1px black solid;
+            padding: 3px 5px;
+            background-color: #E4E9F7;
+        }
+    }
+
+    .filter-field {
+        width: 25%;
+        min-height: 40px;
+        position: fixed;
+        top: 15px;
+        right: 4%;
+        background-color: #FFFFFF;
+        border: 1px black solid;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .header-sect {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            h2 {
+                width: 80%;
+                text-align: center;
+                margin-left: 10%;
+            }
+            i {
+                width: 10%;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.5s;
+            }
+        }
+        .filter-content {
+            width: 80%;
+            margin-top: 20px;
+            display: none;
+            div {
+                margin: 10px 0;
+                label, select {
+                    margin-top: 5px;
+                }
+                input {
+                    cursor: pointer;
+                }
+            }
+        }
+        div:last-child {
+            button {
+                border-radius: 10px;
+                padding: 3px 20px;
+                margin-bottom: 10px;
+                border: 1px black solid;
+            }
+        }
+    }
+    .openedFilter {
+        animation: filterOpen 0.5s both;
+    }
+    .closedFilter {
+        animation: filterClose 0.5s both;
+    }
+    .openedSearch {
+        animation: openSearch 0.5s both;
+    }
+    .closedSearch {
+        animation: closeSearch 0.5s both;
+    }
+
+    .sFilter {
+        display: none;
+        @media (max-width: 769px) {
+            display: flex;
+        }
+        z-index: 120;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -60%;
+        background-color: white;
+        transition: all .5s;
+        
+        align-items: center;
+        flex-direction: column;
+        .chevv {
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            top: 1.5%;
+            left: -38px;
+            background-color: white;
+            box-shadow: -8px 0px 8px 0px rgba(0,0,0,0.35);
+            border-radius: 5px 0 0 5px;
+            z-index: 109;
+        }
+        h2 {
+            width: 80%;
+            text-align: center;
+            border-bottom: 1px black solid;
+            margin-top: 10px;
+        }
+        .sFilter-content {
+            width: 80%;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-bottom: 1px gray solid;
+            flex-direction: column;
+            .sDropdowns {
+                width: 100%;
+                div {
+                    width: 100%;
+                    display: flex;
+                    select {
+                        margin-left: 5px;
+                        width: 40%;
+                    }
+                }
+            }
+            .inputs {
+                width: 100%;
+            }
+            div:last-child {
+                button {
+                    width: 70px;
+                }
+                span {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .active {
+        right: 0 !important;
+        box-shadow: 5px 5px 15px 10px rgba(0,0,0,0.7);
+    }
+
+    .minimal-container {
+        flex-direction: column;
+        .card {
+            width: 80% !important;
+            height: 15vh;
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            @media (max-width: 769px) {
+                width: 98% !important;
+            }
+            @media (max-width: 604px) {
+                height: 10vh;
+            }
+            @media (max-width: 500px) {
+                height: 8vh;
+            }
+            img {
+                width: 20%;
+                height: 100%;
+                border-radius: 5px;
+                padding: 2px;
+                border-right: 1px gray solid;
+            }
+            .card-description {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                width: 70%;
+                @media (max-width: 569px) {
+                    width: 80%;
+                }
+                h3 {
+                    @media (max-width: 466px) {
+                        font-size: 15px;
+                    }
+                    @media (max-width: 400px) {
+                        font-size: 12px;
+                    }
+                }
+                ul {
+                    li {
+                        display: none;
+                    }
+                    li:first-child {
+                        display: block;
+                    }
+                }
+                .button-holder {
+                    width: 20%;
+                    flex-direction: row-reverse;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+
+}
+
+body.dark main .drk {
+    background-color: #242526 !important; 
+    color: rgb(192, 192, 192) !important;
+    input {
+        background: #4c4d50 !important;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+@keyframes openSearch {
+    0% {
+        width: 77px;
+    }
+    100% {
+        width: 385px;
+    }
+}
+@keyframes closeSearch {
+    0% {
+        width: 385px;
+    }
+    100% {
+        width: 77px;
+    }
+}
+
+@keyframes filterOpen {
+    0% {
+        min-height: 40px;
+    }
+    100% {
+        min-height: 270px;
+    }
+}
+@keyframes filterClose {
+    0% {
+        min-height: 270px;
+    }
+    100% {
+        min-height: 40px;
+    }
+}

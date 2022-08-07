@@ -1,0 +1,190 @@
+/* profile */
+.profileCardBackground {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 105;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profileCard {
+    width: 40%;
+    height: 50vh;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.profileCard h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+.profile-content {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.profile-btn-holder {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 15%;
+}
+.profile-btn-holder button {
+    width: 70px;
+    height: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* image popup */
+.imgBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.514);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 400;
+}
+.imgBackground img {
+    max-width: 90%;
+}
+
+
+/* category card */
+.categoryCardBackground {
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ccContent {
+    width: 30%;
+    height: 65vh;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+.ccContent h2 {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+.selectors {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.selector {
+    width: 80%;
+    height: 40px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.selector:hover {
+    border: 1px rgb(3, 3, 3) solid;
+}
+.selector p {
+    text-align: center;
+    font-size: 20px;
+}
+.ccContent button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 65px;
+}
+@media only screen and (max-width: 1623px) {
+    .ccContent {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 936px) {
+    .ccContent {
+        width: 70%;
+        height: 70vh;
+    }
+}
+@media only screen and (max-width: 711px) {
+    .ccContent {
+        width: 80%;
+        height: 80vh;
+    }
+    .selectors img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* edit card*/
+.editCard {
+    position: fixed;
+    width: 420px;
+    height: 200px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 107;
+    border: 1px black solid;
+    box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.185);
+}
+.editCard div:first-child {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.editCard div:first-child label, .editCard div:first-child input {
+    width: 70%;
+}
+.editCard div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.editCard div:last-child button {
+    margin: 0 5px 0 0;
+    width: 65px;
+    cursor: pointer;
+}

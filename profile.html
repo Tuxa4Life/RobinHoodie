@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/7c08aaed76.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/styles/profile.css">
+    <link rel="stylesheet" href="assets/styles/generalCards.css">
+    <link rel="stylesheet" href="assets/styles/sNavigation.css">
+    <link rel="stylesheet" href="assets/styles/navigation.css">
+         
+    <link rel="shortcut icon" href="assets/images/Logo.png">
+    
+    <title>RH | Autorization</title>
+</head>
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div style="cursor: pointer;" class="image-text" onclick="window.location.href = 'index.html'">
+                <span class="image">
+                    <img src="assets/images/Logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Robin Hoodie</span>
+                    <span class="profession">Merch Shop</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <span class="text nav-text">ძიება</span>
+                </li>
+                
+                <ul class="menu-links">
+                    <li style="cursor: pointer;" class="nav-link">
+                        <a class="home-link">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">მთავარი</span>
+                        </a>
+                    </li>
+
+                    <li style="cursor: pointer;" class="nav-link">
+                        <a class="bookmark-link">
+                            <i class='bx bx-bookmarks icon'></i>
+                            <span class="text nav-text">შენახულები</span>
+                        </a>
+                    </li>
+
+                    <li style="cursor: pointer;" class="nav-link active">
+                        <a class="profile-link">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">ანგარიში</span>
+                        </a>
+                    </li>
+
+
+                    <li style="cursor: pointer;" class="nav-link">
+                        <a class="contact-link">
+                            <i class='bx bx-message-dots icon'></i>
+                            <span class="text nav-text">კონტაქტი</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">მუქი რეჟიმი</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">ავტორიზაცია</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input class="loginEmail" type="text" placeholder="შეიყვანეთ ელ-ფოსტა" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input class="loginPassword" type="password" class="password" placeholder="შეიყვანეთ პაროლი" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">დაიმახსოვრე</label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="input-field button">
+                        <input class="loginBtn" type="button" value="Login">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">ახალი ბრძანდებით?
+                        <a href="#" class="text signup-link">დარეგისტრირდით აქ!</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">რეგისტრაცია</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input class="registerName" type="text" placeholder="სახელი" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input class="registerEmail" type="text" placeholder="ელ-ფოსტა" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input class="registerPassword" type="password" class="password" placeholder="ახალი პაროლი" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input  class="registerRPassword" type="password" class="password" placeholder="გაიმეორეთ პაროლი" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+
+                    <div class="input-field button">
+                        <input class="registerBtn" type="button" value="რეგისტრაცია">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">ხართ უკვე დარეგისტრირებულები?
+                        <a href="#" class="text login-link">გაიარეთ ავტორიზაცია!</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sNav">
+        <div class="first-half-part half-part">
+            <img src="assets/images/Logo.png" class="Shome-link" alt="">
+            <i class='bx bx-search icon Ssearch-box'></i>
+        </div>
+        <div class="small-state">
+            <i class='bx bx-user icon'></i>
+        </div>
+        <div class="second-half-part half-part">
+            <i class='bx bx-bookmarks icon Sbookmark-link'></i>
+            <i class='bx bx-message-dots icon Scontact-link'></i>
+        </div>
+    </nav>
+
+    <div class="Sprofile-link"></div>
+
+
+    <script src="assets/js/Page Scripts/profile.js"></script>
+    <script src="assets/js/user_data.js"></script>
+
+    <script src="assets/js/Navigation/navigation.js"></script>
+    <script src="assets/js/Navigation/sNavigation.js"></script>
+    
+    <script src="assets/js/links.js"></script>
+</body>
+</html>
